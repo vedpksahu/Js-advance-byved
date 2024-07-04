@@ -28,7 +28,31 @@ let myObj = {
 };
 
 const myFuncation = function () {
-    console.log("Hello World");
-}
+  console.log("Hello World");
+};
 
-console.log(typeof myObj);
+// console.log(typeof myObj);
+
+//stack and heap
+
+//stack (primitive) (get copy)
+
+let myHousename = "newpolicequarters";
+
+let anothername = myHousename;
+anothername = "momos aur chatni";
+
+//  console.log(myHousename);
+//  console.log(anothername);
+
+let userOne = {
+  email: "user@google.com",
+  upi: "user@bil",
+};
+
+let userTwo = userOne;
+userTwo.email = "ved@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
+
+//heap (non-primitive) (get reference)
