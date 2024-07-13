@@ -101,5 +101,9 @@ const course = {
   courseInstructor: "ved",
 };
 
-const { price } = course;
-console.log(price);
+const { courseInstructor: instructor } = course;
+console.log(instructor);
+
+//if we see {}curly braces the it is destructuring
+
+
